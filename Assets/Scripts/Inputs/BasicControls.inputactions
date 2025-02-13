@@ -1,0 +1,98 @@
+{
+    "name": "BasicControls",
+    "maps": [
+        {
+            "name": "CharacterActionMap",
+            "id": "29269f76-9434-4ac3-9f57-ebd59e0dc544",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "6882ff37-1bd2-49b6-9fb2-a88508ab779c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "MouseInputs",
+                    "type": "Button",
+                    "id": "76464907-c47c-4478-bc31-c187671f3c22",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "c673e277-8d34-4c5a-86cc-2edb03e3c02e",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "ca2d4abc-508c-49da-984b-7882f8c15c9d",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "66c87191-9054-4b87-bac1-e7331f11ea88",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "a9648004-0117-4bcd-8ff2-30dd0109bc5e",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "29f7a083-dc87-4ffa-8e85-ea2db8bdc018",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "f4eeda5e-d1d8-42b4-95e2-c06743226d3c",
+                    "path": "<Mouse>/press",
+                    "interactions": "Hold",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MouseInputs",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
