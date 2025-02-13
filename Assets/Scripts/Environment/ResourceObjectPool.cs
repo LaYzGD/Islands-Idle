@@ -14,12 +14,14 @@ public class ResourceObjectPool : MonoBehaviour
 
     private VFXPool _vfxPool;
     private AudioPlayer _audioPlayer;
+    private CollectablePool _collectablePool;
 
-    public void Initialize(AudioPlayer audio, VFXPool vfxPool)
+    public void Initialize(AudioPlayer audio, VFXPool vfxPool, CollectablePool pool)
     {
         _pool = new ObjectPool<ResourceObject>(() => Instantiate(_prefab), (obj) => obj.gameObject.SetActive(true), (obj) => obj.gameObject.SetActive(false), (obj) => Destroy(obj.gameObject), false);
         _vfxPool = vfxPool;
         _audioPlayer = audio;
+        _collectablePool = pool;
     }
 
     public void SpawnAllObjects()
@@ -33,9 +35,8 @@ public class ResourceObjectPool : MonoBehaviour
     private void SpawnObject(Vector3 position)
     {
         var obj = _pool.Get();
-        obj.Initialize(_audioPlayer, _vfxPool, position, OnObjectKilled);
+        obj.Initialize(_audioPlayer, _vfxPool, position, _collectablePool, OnObjectKilled);
         obj.transform.SetParent(_spawnedObjectsParent);
-        obj.transform.localPosition = position;
         obj.transform.localRotation = Quaternion.Euler(0f, Random.Range(0f, 360f), 0f);
     }
 

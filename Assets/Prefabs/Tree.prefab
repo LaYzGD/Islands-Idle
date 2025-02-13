@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2120028106392848616}
   - component: {fileID: 5407183885971053853}
   - component: {fileID: 5921878107873050158}
-  m_Layer: 0
+  - component: {fileID: -8728008181675055366}
+  m_Layer: 8
   m_Name: Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32,6 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1823889301882327713}
+  - {fileID: 6047324401705804404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5407183885971053853
@@ -68,11 +70,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data: {fileID: 11400000, guid: 3e59d098997da9c41a56272decc5b20c, type: 2}
+  _rigidbody: {fileID: -8728008181675055366}
   _animator: {fileID: 6048193154748781564}
-  _hitPoint: {fileID: 2120028106392848616}
+  _hitPoint: {fileID: 6047324401705804404}
   _soundVolume: 0.5
   _hitTransitionName: Hit
   _touchTransitionName: Touch
+--- !u!54 &-8728008181675055366
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4648583819054339023}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 1
+  m_Constraints: 4
+  m_CollisionDetection: 1
 --- !u!1 &5178839983517121035
 GameObject:
   m_ObjectHideFlags: 0
@@ -179,3 +209,34 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &9120613065337569373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6047324401705804404}
+  m_Layer: 0
+  m_Name: HitPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6047324401705804404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9120613065337569373}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2120028106392848616}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

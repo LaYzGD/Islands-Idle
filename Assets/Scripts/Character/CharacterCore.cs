@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class CharacterCore : MonoBehaviour
+public class CharacterCore : MonoBehaviour, ICollector
 {
     [Header("Data")]
     [SerializeField] private LocomotionData _locomotionData;
@@ -46,5 +46,10 @@ public class CharacterCore : MonoBehaviour
         _instrumentCollisionDetector.Initialize(_coreData.Damage, vfxPool, _coreData.InstrumentHitVFX);
         _locomotionStateMachine.Start(IdleState);
         _actionStateMachine.Start(ActionIdle);
+    }
+
+    public void Collect(ResourceCollectable collectable)
+    {
+        print("Collect");
     }
 }
