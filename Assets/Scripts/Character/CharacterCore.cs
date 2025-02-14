@@ -11,15 +11,16 @@ public class CharacterCore : MonoBehaviour, ICollector
     [Header("Components")]
     [SerializeField] private CharacterController _characterController;
     [Header("References")]
-    [SerializeField] private InputsHandler _inputsHandler;
     [SerializeField] private AnimationEffects _animationEffects;
     [SerializeField] private InstrumentCollisionDetector _instrumentCollisionDetector;
     [SerializeField] private Transform _body;
     [SerializeField] private Animator _animator;
 
+    private InputsHandler _inputsHandler;
     private Locomotion _locomotion;
     private StateMachine _locomotionStateMachine;
     private StateMachine _actionStateMachine;
+    private InventoryController _inventoryController;
 
     public ActionIdle ActionIdle { get; private set; }
     public IdleState IdleState { get; private set; }
@@ -32,9 +33,11 @@ public class CharacterCore : MonoBehaviour, ICollector
         _actionStateMachine.Update();
     }
 
-    public void Initialize(AudioPlayer audioPlayer, VFXPool vfxPool)
+    public void Initialize(InputsHandler inputs, AudioPlayer audioPlayer, VFXPool vfxPool, InventoryController inventoryController)
     {
+        _inputsHandler = inputs;
         _locomotion = new Locomotion(_characterController, _body, _locomotionData);
+        _inventoryController = inventoryController;
         _locomotionStateMachine = new StateMachine();
         _actionStateMachine = new StateMachine();
 
@@ -48,8 +51,8 @@ public class CharacterCore : MonoBehaviour, ICollector
         _actionStateMachine.Start(ActionIdle);
     }
 
-    public void Collect(ResourceCollectable collectable)
+    public bool Collect(ResourceCollectable collectable)
     {
-        print("Collect");
+        return _inventoryController.TryAddItems(collectable.ResourceType, 1);
     }
 }

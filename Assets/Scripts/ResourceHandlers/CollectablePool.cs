@@ -16,11 +16,11 @@ public class CollectablePool : MonoBehaviour
         _vfxPool = pool;
     }
 
-    public void SpawnItem(Vector3 position)
+    public void SpawnItem(Vector3 position, ResourceType type)
     {
         var item = _pool.Get();
         item.transform.position = position;
-        item.Initialize(_audioPlayer, _vfxPool, OnItemCollect);
+        item.Initialize(type, _audioPlayer, _vfxPool, OnItemCollect);
     }
 
     private void OnItemCollect(ResourceCollectable item) 

@@ -43,7 +43,7 @@ public class ResourceObject : MonoBehaviour, IHittable
         
         if (_durability <= 0)
         {
-            _collectablePool.SpawnItem(_hitPoint.position);
+            _collectablePool.SpawnItem(_hitPoint.position, _data.ResourceType);
             _killAction(this, _initialPosition);
         }
     }

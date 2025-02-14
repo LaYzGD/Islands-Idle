@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface ICollector
 {
-    public void Collect(ResourceCollectable collectable);
+    public bool Collect(ResourceCollectable collectable);
 }

@@ -6,11 +6,13 @@ public class Harvester : MonoBehaviour, ICollector
     [SerializeField] private VFXObjectData _hitVFX;
 
     private VFXPool _pool;
+    private InventoryController _inventoryController;
     //private AudioPlayer _audio;
 
-    public void Initialize(/*AudioPlayer audio,*/ VFXPool vFXPool)
+    public void Initialize(/*AudioPlayer audio,*/ VFXPool vFXPool, InventoryController inventoryController)
     {
         //_audio = audio;
+        _inventoryController = inventoryController;
         _pool = vFXPool;
     }
 
@@ -23,8 +25,8 @@ public class Harvester : MonoBehaviour, ICollector
         }
     }
 
-    public void Collect(ResourceCollectable collectable)
+    public bool Collect(ResourceCollectable collectable)
     {
-        print("Collect");
+        return _inventoryController.TryAddItems(collectable.ResourceType, 1);
     }
 }
