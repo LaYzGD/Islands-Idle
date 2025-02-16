@@ -20,8 +20,8 @@ MonoBehaviour:
     Amount: 1
   <Description>k__BackingField: +1 blade
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 2
-    <BuildingLevel>k__BackingField: 1
-    <GrowthTime>k__BackingField: 0
-    <ResourceObjectData>k__BackingField: {fileID: 0}
-    <Probability>k__BackingField: 0
+    Zone: 2
+    BuildingLevel: 1
+    GrowthTime: 0
+    ResourceObjectData: {fileID: 0}
+    Probability: 0

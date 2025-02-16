@@ -20,9 +20,9 @@ public struct Ingredient
 [Serializable]
 public struct UpgradeType
 {
-    [field: SerializeField] public Zone Zone { get; private set; }
-    [field: SerializeField] public int BuildingLevel { get; private set; }
-    [field: SerializeField] public float GrowthTime { get; private set; }
-    [field: SerializeField] public ResourceObjectData ResourceObjectData { get; private set; }
-    [field: SerializeField] public float Probability { get; private set; }
+    public Zone Zone;
+    public int BuildingLevel;
+    public float GrowthTime;
+    public ResourceObjectData ResourceObjectData;
+    public float Probability;
 }

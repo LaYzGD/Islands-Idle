@@ -22,8 +22,8 @@ MonoBehaviour:
     Amount: 50
   <Description>k__BackingField: Increases spawn chances of Ruby ore. 5% -> 20%
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 0
-    <BuildingLevel>k__BackingField: 0
-    <GrowthTime>k__BackingField: 0
-    <ResourceObjectData>k__BackingField: {fileID: 11400000, guid: cf2da26c9e8c4b24e8482bbe55206b37, type: 2}
-    <Probability>k__BackingField: 2
+    Zone: 0
+    BuildingLevel: 0
+    GrowthTime: 0
+    ResourceObjectData: {fileID: 11400000, guid: 75ab3337fcc66b5428d914ac4f6be902, type: 2}
+    Probability: 0.2

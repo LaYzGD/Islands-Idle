@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896f36536359eda48bddc1371dfa1c0e, type: 3}
   m_Name: CopperObject
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: CopperObject
   <HitVFX>k__BackingField: {fileID: 11400000, guid: a75eaba0ad1b8e840a00f6c962f60f45, type: 2}
   <HitAudio>k__BackingField: {fileID: 8300000, guid: d945ec75624985d4c983cf39aba03d56, type: 3}
   <DestroyAudio>k__BackingField: {fileID: 8300000, guid: 3ae00e107fe415a499ece04116117013, type: 3}

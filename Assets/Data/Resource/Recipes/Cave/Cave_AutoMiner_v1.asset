@@ -20,8 +20,8 @@ MonoBehaviour:
     Amount: 5
   <Description>k__BackingField: Automatically mines stone and ores
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 2
-    <BuildingLevel>k__BackingField: 0
-    <GrowthTime>k__BackingField: 0
-    <ResourceObjectData>k__BackingField: {fileID: 0}
-    <Probability>k__BackingField: 0
+    Zone: 2
+    BuildingLevel: 0
+    GrowthTime: 0
+    ResourceObjectData: {fileID: 0}
+    Probability: 0

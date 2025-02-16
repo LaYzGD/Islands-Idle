@@ -1,10 +1,13 @@
 using UnityEngine;
+using System;
 using UnityEngine.InputSystem;
 
 public class InputsHandler : MonoBehaviour
 {
     private Vector2 _movementInput;
     private bool _isMousePressed;
+
+    public event Action OnEscapePressed;
 
     public bool IsMousePressed => _isMousePressed;
 
@@ -23,6 +26,14 @@ public class InputsHandler : MonoBehaviour
         if (callback.canceled)
         {
             _isMousePressed = false;
+        }
+    }
+
+    public void OnEscapeButtonPressed(InputAction.CallbackContext callback)
+    {
+        if (callback.performed)
+        {
+            OnEscapePressed?.Invoke();
         }
     }
 

@@ -15,11 +15,11 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 21300032, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
   <Ingredients>k__BackingField:
   - ResourceType: {fileID: 11400000, guid: 9069562e68a721e49adbfc3e68733db0, type: 2}
-    Amount: 3
+    Amount: 5
   <Description>k__BackingField: Decreases trees growth time. 2s -> 1s
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 0
-    <BuildingLevel>k__BackingField: 0
-    <GrowthTime>k__BackingField: 1
-    <ResourceObjectData>k__BackingField: {fileID: 0}
-    <Probability>k__BackingField: 0
+    Zone: 0
+    BuildingLevel: 0
+    GrowthTime: 1
+    ResourceObjectData: {fileID: 0}
+    Probability: 0

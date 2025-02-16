@@ -15,11 +15,11 @@ MonoBehaviour:
   <Sprite>k__BackingField: {fileID: 21300004, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
   <Ingredients>k__BackingField:
   - ResourceType: {fileID: 11400000, guid: 9069562e68a721e49adbfc3e68733db0, type: 2}
-    Amount: 5
+    Amount: 15
   <Description>k__BackingField: + 2 blades
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 1
-    <BuildingLevel>k__BackingField: 2
-    <GrowthTime>k__BackingField: 0
-    <ResourceObjectData>k__BackingField: {fileID: 0}
-    <Probability>k__BackingField: 0
+    Zone: 1
+    BuildingLevel: 2
+    GrowthTime: 0
+    ResourceObjectData: {fileID: 0}
+    Probability: 0

@@ -20,8 +20,8 @@ MonoBehaviour:
     Amount: 250
   <Description>k__BackingField: Increases spawn chances of Copper ore. 15% -> 30%
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 0
-    <BuildingLevel>k__BackingField: 0
-    <GrowthTime>k__BackingField: 0
-    <ResourceObjectData>k__BackingField: {fileID: 11400000, guid: 304e401ca05bb0144bad2eadcc3cd38b, type: 2}
-    <Probability>k__BackingField: 0.3
+    Zone: 0
+    BuildingLevel: 0
+    GrowthTime: 0
+    ResourceObjectData: {fileID: 11400000, guid: 8b739c53bc8de904ab6fc3dd63e71c64, type: 2}
+    Probability: 0.3

@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896f36536359eda48bddc1371dfa1c0e, type: 3}
   m_Name: TreeObject
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: TreeObject
   <HitVFX>k__BackingField: {fileID: 11400000, guid: e534c06762150d84e8967adf9f175348, type: 2}
   <HitAudio>k__BackingField: {fileID: 8300000, guid: 6b6822fa18a0b5e49a21956956636fd5, type: 3}
+  <DestroyAudio>k__BackingField: {fileID: 0}
   <Durability>k__BackingField: 2
   <ResourceType>k__BackingField: {fileID: 11400000, guid: c83a8d9d1f1328d4682017acaed027b2, type: 2}
   <AnimatorOverrideController>k__BackingField: {fileID: 0}

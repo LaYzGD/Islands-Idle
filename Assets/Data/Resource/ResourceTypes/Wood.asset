@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307f380559f009544b4c7ac474cf0630, type: 3}
   m_Name: Wood
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Wood
   <Sprite>k__BackingField: {fileID: 21300000, guid: e232efa096f10134a91bdf0ff689e302, type: 3}
   <Mesh>k__BackingField: {fileID: -1890551805210500224, guid: 68a9d47f918c2ab49bce82d225bb2cef, type: 3}
   <Materials>k__BackingField:

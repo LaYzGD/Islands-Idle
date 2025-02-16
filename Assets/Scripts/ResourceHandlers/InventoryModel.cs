@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 public class InventoryModel
 {
@@ -108,6 +109,22 @@ public class InventoryModel
         }
 
         return amount;
+    }
+
+    public List<Item> GetItems()
+    {
+        List<Item> list = new List<Item>();
+        foreach (var slot in _inventory.Values)
+        {
+            if (slot.Item == null)
+            {
+                continue;
+            }
+
+            list.Add(new Item(slot.Item.Name, slot.ItemsAmount));
+        }
+
+        return list;
     }
 }
 

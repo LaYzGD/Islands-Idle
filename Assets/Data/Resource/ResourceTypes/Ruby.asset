@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 307f380559f009544b4c7ac474cf0630, type: 3}
   m_Name: Ruby
   m_EditorClassIdentifier: 
+  <Name>k__BackingField: Ruby
   <Sprite>k__BackingField: {fileID: 21300000, guid: 64da693ba6b64ae44a77b519e8467d05, type: 3}
   <Mesh>k__BackingField: {fileID: -1079386030359865419, guid: 7a3b9546791b0e84ab3b4d435abc8a54, type: 3}
   <Materials>k__BackingField:

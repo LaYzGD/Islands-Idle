@@ -20,8 +20,8 @@ MonoBehaviour:
     Amount: 20
   <Description>k__BackingField: Decreases trees growth time. 4s -> 3s
   <UpgradeType>k__BackingField:
-    <Zone>k__BackingField: 0
-    <BuildingLevel>k__BackingField: 0
-    <GrowthTime>k__BackingField: 3
-    <ResourceObjectData>k__BackingField: {fileID: 0}
-    <Probability>k__BackingField: 0
+    Zone: 0
+    BuildingLevel: 0
+    GrowthTime: 3
+    ResourceObjectData: {fileID: 0}
+    Probability: 0

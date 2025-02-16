@@ -120,7 +120,7 @@ public class UpgradeController : MonoBehaviour
         }
 
 
-        _caveSpawner.ChangeSpawnProbabilty(resourceType, probability);
+        _caveSpawner.ChangeSpawnProbability(resourceType, probability);
     }
 
     private void UpgradeBuilding(int currentIndex, Building[] buildings, CraftingRecipe recipe)
@@ -132,12 +132,12 @@ public class UpgradeController : MonoBehaviour
 
         if (currentIndex == 0)
         {
-            buildings[currentIndex].gameObject.SetActive(true);
+            buildings[currentIndex].Enable();
             return;
         }
 
-        buildings[currentIndex - 1].gameObject.SetActive(false);
-        buildings[currentIndex].gameObject.SetActive(true);
+        buildings[currentIndex - 1].Disable();
+        buildings[currentIndex].Enable();
     }
 
     private void OnDestroy()
