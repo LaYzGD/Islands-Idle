@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class ResourceCollectable : MonoBehaviour
 {
+    [SerializeField] private MeshFilter _meshFilter;
+    [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private VFXObjectData _collectVFX;
     [SerializeField] private AudioClip _collectSound;
     [SerializeField] private float _collectVolume;
@@ -18,6 +20,8 @@ public class ResourceCollectable : MonoBehaviour
         _audio = audio;
         _pool = pool;
         _onCollectAction = onCollectAction;
+        _meshFilter.sharedMesh = type.Mesh;
+        _meshRenderer.sharedMaterials = type.Materials;
     }
 
     private void OnTriggerEnter(Collider other)

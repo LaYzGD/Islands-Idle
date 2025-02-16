@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class InventoryController : MonoBehaviour
@@ -9,6 +10,8 @@ public class InventoryController : MonoBehaviour
     private InventoryView _inventoryView;
     private InventoryModel _inventory;
 
+    public event Action OnInventoryUpdate;
+
     public void Initialize(InventoryView inventoryView)
     {
         _inventoryView = inventoryView;
@@ -19,14 +22,29 @@ public class InventoryController : MonoBehaviour
         _inventory.OnSlotItemChanged += AddItemToView;
     }
 
+    public int GetItemAmount(ResourceType type)
+    {
+        return _inventory.GetItemsAmount(type);
+    }
+
     public bool TryAddItems(ResourceType type, int amount)
     {
-        return _inventory.TryAddItems(type, amount);
+        bool result = _inventory.TryAddItems(type, amount);
+        if (result)
+        {
+            OnInventoryUpdate?.Invoke();
+        }
+        return result;
     }
 
     public bool TryRemoveItems(ResourceType type, int amount)
     {
-        return _inventory.TryRemoveItems(type, amount);
+        bool result = _inventory.TryRemoveItems(type, amount);
+        if (result)
+        {
+            OnInventoryUpdate?.Invoke();
+        }
+        return result;
     }
 
     private void UpdateView(int slotIndex, int amount)

@@ -2,9 +2,10 @@ using UnityEngine;
 
 public class ResourceObject : MonoBehaviour, IHittable
 {
-    [SerializeField] private ResourceObjectData _data;
     [SerializeField] private Rigidbody _rigidbody;
     [SerializeField] private Animator _animator;
+    [SerializeField] private MeshFilter _meshFilter;
+    [SerializeField] private MeshRenderer _meshRenderer;
     [SerializeField] private Transform _hitPoint;
     [SerializeField] private float _soundVolume;
     [SerializeField] private string _hitTransitionName;
@@ -16,9 +17,17 @@ public class ResourceObject : MonoBehaviour, IHittable
     private Vector3 _initialPosition;
     private CollectablePool _collectablePool;
     private System.Action<ResourceObject, Vector3> _killAction;
+    private ResourceObjectData _data;
 
-    public void Initialize(AudioPlayer audio, VFXPool pool, Vector3 initialPos, CollectablePool collectablePool, System.Action<ResourceObject, Vector3> killAction) 
+    public void Initialize(ResourceObjectData data, AudioPlayer audio, VFXPool pool, Vector3 initialPos, CollectablePool collectablePool, System.Action<ResourceObject, Vector3> killAction) 
     {
+        _data = data;
+        if (_data.AnimatorOverrideController != null)
+        {
+            _animator.runtimeAnimatorController = _data.AnimatorOverrideController;
+        }
+        _meshFilter.sharedMesh = _data.Mesh;
+        _meshRenderer.sharedMaterials = _data.Materials;
         _durability = _data.Durability;
         _audioPlayer = audio;
         _pool = pool;
@@ -44,6 +53,10 @@ public class ResourceObject : MonoBehaviour, IHittable
         if (_durability <= 0)
         {
             _collectablePool.SpawnItem(_hitPoint.position, _data.ResourceType);
+            if (_data.DestroyAudio != null)
+            {
+                _audioPlayer.PlaySound(_data.DestroyAudio, _hitPoint, _soundVolume);
+            }
             _killAction(this, _initialPosition);
         }
     }

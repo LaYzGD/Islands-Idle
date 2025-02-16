@@ -13,4 +13,9 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   <Sprite>k__BackingField: {fileID: 21300000, guid: e232efa096f10134a91bdf0ff689e302, type: 3}
-  <Price>k__BackingField: 10
+  <Mesh>k__BackingField: {fileID: -1890551805210500224, guid: 68a9d47f918c2ab49bce82d225bb2cef, type: 3}
+  <Materials>k__BackingField:
+  - {fileID: 2100000, guid: 5fd2beb5660492540aaaa6caa2af935d, type: 2}
+  - {fileID: 2100000, guid: 2e481fda2ecd1c54dbb0c6b2748f3f08, type: 2}
+  - {fileID: 2100000, guid: bfa0fb54bc4526c4daba185f67e21b87, type: 2}
+  - {fileID: 2100000, guid: 834a640f4a63da245ad8a81c672ac097, type: 2}

@@ -69,9 +69,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37e90be5ebe81a6409c913b890defdda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _data: {fileID: 11400000, guid: 3e59d098997da9c41a56272decc5b20c, type: 2}
   _rigidbody: {fileID: -8728008181675055366}
   _animator: {fileID: 6048193154748781564}
+  _meshFilter: {fileID: 3190426992051596051}
+  _meshRenderer: {fileID: 8081827023541206949}
   _hitPoint: {fileID: 6047324401705804404}
   _soundVolume: 0.5
   _hitTransitionName: Hit
@@ -166,7 +167,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 122395b43449a084cad5ea5d24f2646e, type: 2}
-  - {fileID: 2100000, guid: 5e66808a89d064248b862f27c24d08d1, type: 2}
+  - {fileID: 2100000, guid: bfa0fb54bc4526c4daba185f67e21b87, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

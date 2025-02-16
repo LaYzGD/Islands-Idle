@@ -16,3 +16,8 @@ MonoBehaviour:
   <HitAudio>k__BackingField: {fileID: 8300000, guid: 6b6822fa18a0b5e49a21956956636fd5, type: 3}
   <Durability>k__BackingField: 2
   <ResourceType>k__BackingField: {fileID: 11400000, guid: c83a8d9d1f1328d4682017acaed027b2, type: 2}
+  <AnimatorOverrideController>k__BackingField: {fileID: 0}
+  <Mesh>k__BackingField: {fileID: -7699203005589609403, guid: 0aa65f8685f345344b06097a1b5efe92, type: 3}
+  <Materials>k__BackingField:
+  - {fileID: 2100000, guid: 122395b43449a084cad5ea5d24f2646e, type: 2}
+  - {fileID: 2100000, guid: bfa0fb54bc4526c4daba185f67e21b87, type: 2}

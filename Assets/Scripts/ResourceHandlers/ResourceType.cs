@@ -4,5 +4,6 @@ using UnityEngine;
 public class ResourceType : ScriptableObject
 {
     [field: SerializeField] public Sprite Sprite { get; private set; }
-    [field: SerializeField] public int Price { get; private set; }
+    [field: SerializeField] public Mesh Mesh { get; private set; }
+    [field: SerializeField] public Material[] Materials { get; private set; }
 }

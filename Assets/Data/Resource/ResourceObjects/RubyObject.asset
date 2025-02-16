@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896f36536359eda48bddc1371dfa1c0e, type: 3}
+  m_Name: RubyObject
+  m_EditorClassIdentifier: 
+  <HitVFX>k__BackingField: {fileID: 11400000, guid: a75eaba0ad1b8e840a00f6c962f60f45, type: 2}
+  <HitAudio>k__BackingField: {fileID: 8300000, guid: d945ec75624985d4c983cf39aba03d56, type: 3}
+  <DestroyAudio>k__BackingField: {fileID: 8300000, guid: 3ae00e107fe415a499ece04116117013, type: 3}
+  <Durability>k__BackingField: 6
+  <ResourceType>k__BackingField: {fileID: 11400000, guid: 9069562e68a721e49adbfc3e68733db0, type: 2}
+  <AnimatorOverrideController>k__BackingField: {fileID: 22100000, guid: b5d6c03fd4801c54db7ef26f04c553bf, type: 2}
+  <Mesh>k__BackingField: {fileID: 6959812267333459143, guid: 59e1c639d697e0441baa83e8731a41bc, type: 3}
+  <Materials>k__BackingField:
+  - {fileID: 2100000, guid: 5c15703aea649f94889709128bd8926b, type: 2}
+  - {fileID: 2100000, guid: 9b3a2422fcefd764ab218d1879a59e13, type: 2}
