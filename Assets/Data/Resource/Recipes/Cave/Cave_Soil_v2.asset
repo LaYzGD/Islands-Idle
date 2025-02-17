@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6526a34f0343a45a9e7246e3bf8062, type: 3}
   m_Name: Cave_Soil_v2
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300000, guid: 74a226aae0cd30f4699a5cbd9c6ebc67, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 64da693ba6b64ae44a77b519e8467d05, type: 3}
   <Ingredients>k__BackingField:
   - ResourceType: {fileID: 11400000, guid: ec6e9e813dae0d5409cee0d426e9ebcd, type: 2}
     Amount: 100

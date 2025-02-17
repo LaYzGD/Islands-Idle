@@ -46,6 +46,11 @@ public class SaveAndLoad : Singleton<SaveAndLoad>
         }
     }
 
+    public bool CanLoadGame(string gameName)
+    {
+        return _dataService.CanLoadGame(gameName);
+    }
+
     public void NewGame()
     {
         GameData = new GameData("Game");

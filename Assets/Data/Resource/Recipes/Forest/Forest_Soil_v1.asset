@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6526a34f0343a45a9e7246e3bf8062, type: 3}
   m_Name: Forest_Soil_v1
   m_EditorClassIdentifier: 
-  <Sprite>k__BackingField: {fileID: 21300028, guid: 7ab74e659e1f0a34d9cfec21c478fc12, type: 3}
+  <Sprite>k__BackingField: {fileID: 21300000, guid: 7b1fe93a19d659f48a006b7839620828, type: 3}
   <Ingredients>k__BackingField:
   - ResourceType: {fileID: 11400000, guid: 4bedf265d000858408977a0ceae4c788, type: 2}
     Amount: 5

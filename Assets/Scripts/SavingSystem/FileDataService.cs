@@ -32,6 +32,18 @@ public class FileDataService : IDataService
         File.WriteAllText(fileLocation, _serializer.Serialize(data));
     }
 
+    public bool CanLoadGame(string name)
+    {
+        string fileLocation = GetFullPath(name);
+
+        if (!File.Exists(fileLocation))
+        {
+            return false;
+        }
+
+        return true;
+    }
+
     public GameData Load(string name)
     {
         string fileLocation = GetFullPath(name);
@@ -40,7 +52,7 @@ public class FileDataService : IDataService
         {
             throw new IOException($"No persisted GameData with name '{name}'");
         }
-        Debug.Log(fileLocation);
+
         return _serializer.Deserialize<GameData>(File.ReadAllText(fileLocation));
     }
 
